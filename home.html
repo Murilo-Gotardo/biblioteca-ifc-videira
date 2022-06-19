@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/bae5127ccf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/unset.css">
+    <link rel="shortcut icon" href="https://videira.ifc.edu.br/biblioteca/wp-content/themes/ifc/img/ifc.png"
+        type="image/x-icon">
+    <title>Início</title>
+</head>
+
+<body>
+    <header>
+        <div class="container d-flex justify-content-between">
+            <div class="d-flex align-items-center" style="width: 265.95px;">
+
+
+
+
+                <i id="open" class="fa-solid fa-bars menu" onclick="openNav()"></i>
+
+                <div id="sideNav" class="sidenav">
+                    <div>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                                class="fa-solid fa-angle-left"></i></a>
+                        <a href="#">Sobre</a>
+                        <a href="#">PDFs essenciais</a>
+                        <a href="#">Exemplos de trabalhos</a>
+                        <a href="#">Contact</a>
+                    </div>
+
+
+
+                    <div id="main">
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="" style="width: 265.95px;">
+                <h1 class="m-0">Biblioteca</h1>
+            </div>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 pes" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <button class="btn" id="menu" type="submit"><i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="he-2 d-flex justify-content-center">
+            <div class="d-flex align-items-center ab">
+                <div style="width: 62.05px;">
+                    <a href="home.html">Início</a>
+                </div>
+                <div>
+                    <a href="https://pergamum.ifc.edu.br/pergamum_ifc/biblioteca/index.php" target="_blank">Pergamum</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Inicio do carrosel-->
+    <div class="my-4">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="src/carrosel/c1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="10000">
+                    <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fim do carrosel-->
+
+    <main class="container py-5">
+
+
+    </main>
+
+    <footer class="py-5">
+        <div class="m-0 row d-flex justify-content-evenly d-flex align-items-center">
+            <div class="col-6  d-flex align-items-center" style="width: 200px">
+                <span>EMAILEXAMPLE@EMAIL.COM</span>
+            </div>
+
+            <div class="col-6 linhaVertical" style="width: 200px;">
+                <a href="" class="menu"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="menu"><i class="fa-brands fa-facebook-square"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+    <script src="js/sideBar.js"></script>
+    <script src="js/feriados.js"></script>
+    <script src="js/atendimento.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.4.0/build/global/luxon.min.js"></script>
+    <script>
+        const DateTime = luxon.DateTime;
+        let h = DateTime.local().valueOf();
+        let d = DateTime.local().toFormat('E');
+
+        
+
+        
+        let i = DateTime.fromISO("07:30:00").valueOf();
+        let f = DateTime.fromISO("22:00:00").valueOf();
+
+        
+        // let y = date.getFullYear();
+
+        // let f = getHolidaysBr(y);
+
+
+
+
+        if (!(d === 6) || !(d === 7)) {
+            if (h >= i && h <= f) {
+
+                const h2 = document.createElement("h2");
+                const node = document.createTextNode("A biblioteca está aberta");
+                h2.appendChild(node);
+
+                const element = document.getElementById("main");
+                element.appendChild(h2);
+            } else {
+                const h2 = document.createElement("h2");
+                const node = document.createTextNode(i);
+                h2.appendChild(node);
+
+                const element = document.getElementById("main");
+                element.appendChild(h2);
+            }
+        } else {
+            const h2 = document.createElement("h2");
+            const node = document.createTextNode("A biblioteca está fechada");
+            h2.appendChild(node);
+
+            const element = document.getElementById("main");
+            element.appendChild(h2);
+        }
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/bae5127ccf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/unset.css">
+    <link rel="shortcut icon" href="https://videira.ifc.edu.br/biblioteca/wp-content/themes/ifc/img/ifc.png"
+        type="image/x-icon">
+    <title>PDFs</title>
+</head>
+
+<body>
+    <header>
+        <div class="container d-flex justify-content-between">
+            <div class="d-flex align-items-center" style="width: 265.95px;">
+
+
+
+
+                <i id="open" class="fa-solid fa-bars menu" onclick="openNav()"></i>
+
+                <div id="sideNav" class="sidenav">
+                    <div>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                                class="fa-solid fa-angle-left"></i></a>
+                        <a href="#">Sobre</a>
+                        <a href="#">PDFs essenciais</a>
+                        <a href="#">Clients</a>
+                        <a href="#">Contact</a>
+                    </div>
+
+
+
+                    <div id="main">
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="" style="width: 265.95px;">
+                <h1 class="m-0">Biblioteca</h1>
+            </div>
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 pes" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <button class="btn" id="menu" type="submit"><i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="he-2 d-flex justify-content-center">
+            <div class="d-flex align-items-center ab">
+                <div style="width: 62.05px;">
+                    <a href="home.html">Início</a>
+                </div>
+                <div>
+                    <a href="https://pergamum.ifc.edu.br/pergamum_ifc/biblioteca/index.php" target="_blank">Pergamum</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-6">
+                            <img src="src/capas/memoriasPostumas.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-6">
+                            <div class="card-body">
+                              <h5 class="card-title">Memórias póstumas de Brás Cubas</h5>
+                              <p class="card-text">Machado de Assis</p>
+                              <a href="src/pdfs/memoriasBras.pdf" target="_blank" class="btn">Baixar PDF</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-6">
+                            <img src="src/capas/macunaima.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-6">
+                            <div class="card-body">
+                              <h5 class="card-title">Macunaíma</h5>
+                              <p class="card-text">Mario de Andrade</p>
+                              <a href="src/pdfs/CastroDigital_livro_Macunaima_Mario_de_Andrade.pdf" class="btn ">Baixar PDF</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-6">
+                            <img src="src/capas/euEOutrasPoesias.jpg" class="img-fluid rounded-start" alt="...">
+                          </div>
+                          <div class="col-6">
+                            <div class="card-body">
+                              <h5 class="card-title">Eu e outras poesias</h5>
+                              <p class="card-text">Augusto dos Anjos</p>
+                              <a href="src/pdfs/euAugustoDosAnjos.pdf" class="btn ">Baixar PDF</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-5">
+        <div class="m-0 row d-flex justify-content-evenly d-flex align-items-center">
+            <div class="col-6  d-flex align-items-center" style="width: 200px">
+                <span>EMAILEXAMPLE@EMAIL.COM</span>
+            </div>
+
+            <div class="col-6 linhaVertical" style="width: 200px;">
+                <a href="" class="menu"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="menu"><i class="fa-brands fa-facebook-square"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+    <script src="js/sideBar.js"></script>
+    <script src="js/feriados.js"></script>
+    <script src="js/atendimento.js"></script>
+    <script src="luxon.js"></script>
+</body>
+
+</html>

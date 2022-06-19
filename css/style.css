@@ -1,0 +1,146 @@
+body {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Oswald', sans-serif;
+}
+
+:root {
+    --bg-primary-color: hsl(180, 100%, 17%);
+    --bg-secondary-color: hsl(170, 54%, 76%);
+    --bg-tertiary-color: hsl(175, 93%, 31%);
+    --bg-quarternary-color: hsl(64, 100%, 79%);
+
+
+}
+
+header {
+    background-color: var(--bg-primary-color);
+    color: var(--bg-secondary-color);
+}
+
+.mar {
+    margin-right: 44%;
+}
+
+.he-2 {
+    background-color: var(--bg-secondary-color);
+    color: var(--bg-primary-color);
+}
+
+.ab {
+    margin-right: 85px;
+}
+
+.menu {
+    color: var(--bg-secondary-color);
+
+    transition: color 100ms ease-in-out;
+}
+
+.menu:hover {
+    color: var(--bg-tertiary-color);
+    cursor: pointer;
+}
+
+.he-2 a {
+    color: var(--bg-primary-color);
+
+    transition: color 150ms ease-in-out;
+}
+
+.he-2 a:hover {
+    color: var(--bg-quarternary-color);
+}
+
+.btn {
+    border: solid var(--bg-secondary-color) 2px;
+    color: var(--bg-secondary-color);
+    
+
+    transition: background-color 300ms ease-in-out, border 300ms ease-in-out;
+}
+
+.btn:hover {
+    color: var(--bg-primary-color);
+    background-color: var(--bg-secondary-color);
+}
+
+.pes:focus {
+    box-shadow: 0 0 0.3em var(--bg-secondary-color);
+}
+
+footer {
+    background-color: var(--bg-primary-color);
+    color: var(--bg-secondary-color);
+}
+
+.linhaVertical {
+    height: 100px;
+    border-left: 1px solid var(--bg-secondary-color);
+}
+
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: var(--bg-primary-color);
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--bg-secondary-color);
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: var(--bg-tertiary-color);
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.card {
+    background-color: var(--bg-primary-color);
+}
