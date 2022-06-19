@@ -114,28 +114,35 @@
         </script>
     <script src="js/sideBar.js"></script>
     <script src="js/feriados.js"></script>
-    <script src="js/atendimento.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/luxon@2.4.0/build/global/luxon.min.js"></script>
+    <script src="https://moment.github.io/luxon/global/luxon.js"></script>
     <script>
         const DateTime = luxon.DateTime;
         let h = DateTime.local().valueOf();
         let d = DateTime.local().toFormat('E');
 
-        
 
-        
+
+
+
+
         let i = DateTime.fromISO("07:30:00").valueOf();
         let f = DateTime.fromISO("22:00:00").valueOf();
 
-        
-        // let y = date.getFullYear();
-
-        // let f = getHolidaysBr(y);
 
 
 
 
-        if (!(d === 6) || !(d === 7)) {
+        if ((d == 6) || (d == 7)) {
+
+            const h2 = document.createElement("h2");
+            const node = document.createTextNode("A biblioteca está fechada");
+            h2.appendChild(node);
+
+            const element = document.getElementById("main");
+            element.appendChild(h2);
+
+        } else {
+
             if (h >= i && h <= f) {
 
                 const h2 = document.createElement("h2");
@@ -146,22 +153,15 @@
                 element.appendChild(h2);
             } else {
                 const h2 = document.createElement("h2");
-                const node = document.createTextNode(i);
+                const node = document.createTextNode("A biblioteca está fechada");
                 h2.appendChild(node);
 
                 const element = document.getElementById("main");
                 element.appendChild(h2);
             }
-        } else {
-            const h2 = document.createElement("h2");
-            const node = document.createTextNode("A biblioteca está fechada");
-            h2.appendChild(node);
 
-            const element = document.getElementById("main");
-            element.appendChild(h2);
         }
     </script>
-    
 </body>
 
 </html>
