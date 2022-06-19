@@ -81,50 +81,51 @@
                 <div class="col-lg-4">
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
-                          <div class="col-6">
-                            <img src="src/capas/memoriasPostumas.jpg" class="img-fluid rounded-start" alt="...">
-                          </div>
-                          <div class="col-6">
-                            <div class="card-body">
-                              <h5 class="card-title">Memórias póstumas de Brás Cubas</h5>
-                              <p class="card-text">Machado de Assis</p>
-                              <a href="src/pdfs/memoriasBras.pdf" target="_blank" class="btn">Baixar PDF</a>
+                            <div class="col-6">
+                                <img src="src/capas/memoriasPostumas.jpg" class="img-fluid rounded-start" alt="...">
                             </div>
-                          </div>
+                            <div class="col-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Memórias póstumas de Brás Cubas</h5>
+                                    <p class="card-text">Machado de Assis</p>
+                                    <a href="src/pdfs/memoriasBras.pdf" target="_blank" class="btn">Baixar PDF</a>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
-                          <div class="col-6">
-                            <img src="src/capas/macunaima.jpg" class="img-fluid rounded-start" alt="...">
-                          </div>
-                          <div class="col-6">
-                            <div class="card-body">
-                              <h5 class="card-title">Macunaíma</h5>
-                              <p class="card-text">Mario de Andrade</p>
-                              <a href="src/pdfs/CastroDigital_livro_Macunaima_Mario_de_Andrade.pdf" class="btn ">Baixar PDF</a>
+                            <div class="col-6">
+                                <img src="src/capas/macunaima.jpg" class="img-fluid rounded-start" alt="...">
                             </div>
-                          </div>
+                            <div class="col-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Macunaíma</h5>
+                                    <p class="card-text">Mario de Andrade</p>
+                                    <a href="src/pdfs/CastroDigital_livro_Macunaima_Mario_de_Andrade.pdf"
+                                        class="btn ">Baixar PDF</a>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row g-0">
-                          <div class="col-6">
-                            <img src="src/capas/euEOutrasPoesias.jpg" class="img-fluid rounded-start" alt="...">
-                          </div>
-                          <div class="col-6">
-                            <div class="card-body">
-                              <h5 class="card-title">Eu e outras poesias</h5>
-                              <p class="card-text">Augusto dos Anjos</p>
-                              <a href="src/pdfs/euAugustoDosAnjos.pdf" class="btn ">Baixar PDF</a>
+                            <div class="col-6">
+                                <img src="src/capas/euEOutrasPoesias.jpg" class="img-fluid rounded-start" alt="...">
                             </div>
-                          </div>
+                            <div class="col-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Eu e outras poesias</h5>
+                                    <p class="card-text">Augusto dos Anjos</p>
+                                    <a href="src/pdfs/euAugustoDosAnjos.pdf" class="btn ">Baixar PDF</a>
+                                </div>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -147,8 +148,55 @@
         </script>
     <script src="js/sideBar.js"></script>
     <script src="js/feriados.js"></script>
-    <script src="js/atendimento.js"></script>
-    <script src="luxon.js"></script>
+    <script src="https://moment.github.io/luxon/global/luxon.js"></script>
+    <script>
+        const DateTime = luxon.DateTime;
+        let h = DateTime.local().valueOf();
+        let d = DateTime.local().toFormat('E');
+
+
+
+
+
+
+        let i = DateTime.fromISO("07:30:00").valueOf();
+        let f = DateTime.fromISO("22:00:00").valueOf();
+
+
+
+
+
+        if ((d == 6) || (d == 7)) {
+
+            const h2 = document.createElement("h2");
+            const node = document.createTextNode("A biblioteca está fechada");
+            h2.appendChild(node);
+
+            const element = document.getElementById("main");
+            element.appendChild(h2);
+
+        } else {
+
+            if (h >= i && h <= f) {
+
+                const h2 = document.createElement("h2");
+                const node = document.createTextNode("A biblioteca está aberta");
+                h2.appendChild(node);
+
+                const element = document.getElementById("main");
+                element.appendChild(h2);
+            } else {
+                const h2 = document.createElement("h2");
+                const node = document.createTextNode("A biblioteca está fechada");
+                h2.appendChild(node);
+
+                const element = document.getElementById("main");
+                element.appendChild(h2);
+            }
+
+        }
+    </script>
+
 </body>
 
 </html>
