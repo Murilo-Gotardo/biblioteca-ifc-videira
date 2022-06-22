@@ -26,10 +26,6 @@ header {
     color: var(--bg-primary-color);
 }
 
-.ab {
-    margin-right: 85px;
-}
-
 .menu {
     color: var(--bg-secondary-color);
 
@@ -64,10 +60,6 @@ header {
     background-color: var(--bg-secondary-color);
 }
 
-.pes:focus {
-    box-shadow: 0 0 0.3em var(--bg-secondary-color);
-}
-
 footer {
     background-color: var(--bg-primary-color);
     color: var(--bg-secondary-color);
@@ -92,7 +84,6 @@ footer {
     /* Stay at the top */
     left: 0;
     background-color: var(--bg-primary-color);
-    /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
     padding-top: 60px;
@@ -111,12 +102,31 @@ footer {
     transition: 0.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
+.sidenav .btn-group {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--bg-secondary-color);
+    display: block;
+    transition: 0.3s;
+    
+}
+
+.sidenav .dropdown-menu {
+    background-color: var(--bg-primary-color);
+    border-color: var(--bg-tertiary-color);
+}
+
 .sidenav a:hover {
     color: var(--bg-tertiary-color);
 }
 
-/* Position and style the close button (top right corner) */
+.sidenav .btn-group:hover {
+    color: var(--bg-tertiary-color);
+    cursor: pointer;
+}
+
+/* Position and style of the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -143,4 +153,38 @@ footer {
 
 .card {
     background-color: var(--bg-primary-color);
+}
+
+.meio {
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -400px;
+	margin-top: -300px;
+    height: 600px;
+    width: 0;
+    z-index: 3;
+    background-color: var(--bg-secondary-color);
+    overflow: hidden;
+}
+
+.meio a {
+    color: var(--bg-primary-color);
+}
+
+.body-bd {
+    padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .meio {
+        left: 50%;
+	    top: 35%;
+        margin-left: -150px;
+	    margin-top: -200px;
+        height: 600px;
+        font-size: 14px;
+    }
+
+    
 }
