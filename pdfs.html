@@ -21,7 +21,7 @@
 <body>
     <header>
         <div class="container d-flex justify-content-between">
-            <div class="d-flex align-items-center" style="width: 265.95px;">
+            <div class="d-flex align-items-center" style="width: 61.97px;">
 
 
 
@@ -32,10 +32,23 @@
                     <div>
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
                                 class="fa-solid fa-angle-left"></i></a>
-                        <a href="#">Sobre</a>
+                        <a href="javascript:void(0)" onclick="openDB()">Sobre</a>
+                        <div class="btn-group">
+                            <span class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown"
+                                aria-expanded="false">Guia do usuário</span>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" href="#">Inscrição na biblioteca</a></li>
+                                <li><a class="dropdown-item" href="#">Empréstimo</a></li>
+                                <li><a class="dropdown-item" href="#">Renovação</a></li>
+                                <li><a class="dropdown-item" href="#">Reserva</a></li>
+                                <li><a class="dropdown-item" href="#">Penalidades</a></li>
+                                <li><a class="dropdown-item" href="#">Uso do guarda-volume</a></li>
+                            </ul>
+                        </div>
                         <a href="pdfs.html">PDFs essenciais</a>
-                        <a href="#">Clients</a>
-                        <a href="#">Contact</a>
+                        <a href="#">Exemplos de trabalhos</a>
+                        <a href="#">Contato</a>
+                        <a href="https://biblioteca.ifc.edu.br" target="_blank">SIBI - IFC</a>
                     </div>
 
 
@@ -49,27 +62,25 @@
 
 
             </div>
-            <div class="" style="width: 265.95px;">
+            <div class="">
                 <h1 class="m-0">Biblioteca</h1>
+                <p class="text-center m-0">IFC Videira</p>
             </div>
-            <nav class="navbar">
-                <div class="container-fluid">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2 pes" type="search" placeholder="Pesquisar" aria-label="Search">
-                        <button class="btn" id="menu" type="submit"><i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                    </form>
-                </div>
-            </nav>
+            <div id="horario" class="d-flex align-items-center" style="max-width: 61.97px;">
+                <!--<p id="hora" class="m-0"></p>--> 
+            </div>
+            
+
+
         </div>
         <div class="he-2 d-flex justify-content-center">
-            <div class="d-flex align-items-center ab">
-                <div style="width: 62.05px;">
-                    <a href="index.html">Início</a>
-                </div>
-                <div>
-                    <a href="https://pergamum.ifc.edu.br/pergamum_ifc/biblioteca/index.php" target="_blank">Pergamum</a>
-                </div>
+            <div class="d-flex align-items-center">
+
+                <a href="index.html" class="me-3">Início</a>
+
+
+                <a href="https://pergamum.ifc.edu.br/pergamum_ifc/biblioteca/index.php" target="_blank">Pergamum</a>
+
             </div>
         </div>
     </header>
@@ -145,10 +156,12 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-        </script>
+    </script>
+    <script src="php/settings.php"></script>
     <script src="js/sideBar.js"></script>
     <script src="js/feriados.js"></script>
     <script src="https://moment.github.io/luxon/global/luxon.js"></script>
+    <!--Horario de atendimento-->
     <script>
         const DateTime = luxon.DateTime;
         let h = DateTime.local().valueOf();
@@ -168,32 +181,62 @@
 
         if ((d == 6) || (d == 7)) {
 
-            const h2 = document.createElement("h2");
-            const node = document.createTextNode("A biblioteca está fechada");
+            const h2 = document.createElement("h4");
+            const node = document.createTextNode("Fechada");
             h2.appendChild(node);
 
-            const element = document.getElementById("main");
+            const element = document.getElementById("horario");
             element.appendChild(h2);
 
         } else {
 
             if (h >= i && h <= f) {
 
-                const h2 = document.createElement("h2");
-                const node = document.createTextNode("A biblioteca está aberta");
+                const h2 = document.createElement("h4");
+                const node = document.createTextNode("Aberta");
                 h2.appendChild(node);
 
-                const element = document.getElementById("main");
+                const element = document.getElementById("horario");
                 element.appendChild(h2);
             } else {
-                const h2 = document.createElement("h2");
-                const node = document.createTextNode("A biblioteca está fechada");
+                const h2 = document.createElement("h4");
+                const node = document.createTextNode("Fechada");
                 h2.appendChild(node);
 
-                const element = document.getElementById("main");
+                const element = document.getElementById("horario");
                 element.appendChild(h2);
             }
 
+        }
+
+
+        //relogio
+        // setInterval(function () {
+        //     let h = DateTime.local().toFormat("TT");
+            
+            
+        //     document.getElementById('hora').textContent = h;
+        // }, 1000)
+
+        
+    </script>
+    <!--Responsividade para as caixas de diálogo-->
+    <script>
+        function openDB() {
+            let w = window.screen.width;
+
+            if (w < 1024) {
+                document.getElementById("sobre").style.width = "300px";
+                closeNav();
+            }else {
+                document.getElementById("sobre").style.width = "800px";
+                closeNav();
+            }
+        }
+
+        function closeDB() {
+            document.getElementById("sobre").style.width = "0px";
+            openNav();
         }
     </script>
 
