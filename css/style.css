@@ -50,7 +50,7 @@ header {
 .btn {
     border: solid var(--bg-secondary-color) 2px;
     color: var(--bg-secondary-color);
-    
+
 
     transition: background-color 300ms ease-in-out, border 300ms ease-in-out;
 }
@@ -109,7 +109,7 @@ footer {
     color: var(--bg-secondary-color);
     display: block;
     transition: 0.3s;
-    
+
 }
 
 .sidenav .dropdown-menu {
@@ -157,10 +157,10 @@ footer {
 
 .meio {
     position: absolute;
-	left: 50%;
-	top: 50%;
-	margin-left: -400px;
-	margin-top: -300px;
+    left: 50%;
+    top: 50%;
+    margin-left: -400px;
+    margin-top: -300px;
     height: 600px;
     width: 0;
     z-index: 3;
@@ -179,12 +179,35 @@ footer {
 @media screen and (max-width: 768px) {
     .meio {
         left: 50%;
-	    top: 35%;
+        top: 35%;
         margin-left: -150px;
-	    margin-top: -200px;
+        margin-top: -200px;
         height: 600px;
         font-size: 14px;
     }
 
-    
+
+}
+
+.list-group-item {
+    border-color: var(--bg-primary-color);
+}
+
+#email {
+    cursor: pointer;
+}
+
+.copiado {
+    color: var(--bg-quarternary-color);
+    border: solid 2px var(--bg-secondary-color);
+    border-radius: 2px;
+    margin: 0;
+    transition: transform 0.6s cubic-bezier(0.12, 0, 0.39, 0);
+
+}
+
+.btn-email{
+    border: 0;
+    color: var(--bg-secondary-color);
+    background-color: transparent;
 }

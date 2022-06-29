@@ -37,12 +37,12 @@
                             <span class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown"
                                 aria-expanded="false">Guia do usuário</span>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="#">Inscrição na biblioteca</a></li>
-                                <li><a class="dropdown-item" href="#">Empréstimo</a></li>
-                                <li><a class="dropdown-item" href="#">Renovação</a></li>
-                                <li><a class="dropdown-item" href="#">Reserva</a></li>
-                                <li><a class="dropdown-item" href="#">Penalidades</a></li>
-                                <li><a class="dropdown-item" href="#">Uso do guarda-volume</a></li>
+                                <li><a class="dropdown-item" href="guiaUsuario.html#inscricaoB">Inscrição na biblioteca</a></li>
+                                <li><a class="dropdown-item" href="guiaUsuario.html#emprestimo">Empréstimo</a></li>
+                                <li><a class="dropdown-item" href="guiaUsuario.html#renovacao">Renovação</a></li>
+                                <li><a class="dropdown-item" href="guiaUsuario.html#reserva">Reserva</a></li>
+                                <li><a class="dropdown-item" href="guiaUsuario.html#penalidades">Penalidades</a></li>
+                                <li><a class="dropdown-item" href="guiaUsuario.html#guarda-volume">Uso do guarda-volume</a></li>
                             </ul>
                         </div>
                         <a href="pdfs.html">PDFs essenciais</a>
@@ -85,7 +85,18 @@
         </div>
     </header>
 
-    <main class="container py-5">
+    <main class="container my-5">
+        <div id="block_land"></div>
+        <div id="sobre" class="meio">
+            <div class="body-bd">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeDB()"><i class="fa-solid fa-xmark"></i></a>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias mollitia quam consectetur ipsam tenetur molestias culpa quidem. Temporibus eum impedit, explicabo perferendis error cupiditate assumenda voluptas, corporis officiis mollitia recusandae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ullam architecto quasi accusantium. Id doloribus, laudantium consequuntur explicabo ab error deserunt esse itaque animi nostrum odio? Veritatis culpa modi ullam.
+                </p>
+            </div>
+            
+            
+        </div>
 
         <div class="container">
             <div class="row">
@@ -144,8 +155,8 @@
 
     <footer class="py-5">
         <div class="m-0 row d-flex justify-content-evenly d-flex align-items-center">
-            <div class="col-6  d-flex align-items-center" style="width: 200px">
-                <span>EMAILEXAMPLE@EMAIL.COM</span>
+            <div class="col-6 d-flex align-items-center" style="width: 200px">
+                <button class="btn-email" id="email" onclick="copiarATranferencia()" title="Copiar"> biblioteca.videira@ifc.edu.br</button>
             </div>
 
             <div class="col-6 linhaVertical" style="width: 200px;">
@@ -158,6 +169,7 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
     <script src="php/settings.php"></script>
+    <script src="js/copiar.js"></script>
     <script src="js/sideBar.js"></script>
     <script src="js/feriados.js"></script>
     <script src="https://moment.github.io/luxon/global/luxon.js"></script>

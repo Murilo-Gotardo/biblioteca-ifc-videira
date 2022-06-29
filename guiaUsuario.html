@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,9 +14,8 @@
     <link rel="stylesheet" href="css/unset.css">
     <link rel="shortcut icon" href="https://videira.ifc.edu.br/biblioteca/wp-content/themes/ifc/img/ifc.png"
         type="image/x-icon">
-    <title>Início</title>
+    <title>Guia do usuário</title>
 </head>
-
 <body>
     <header>
         <div class="container d-flex justify-content-between">
@@ -37,12 +35,12 @@
                             <span class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown"
                                 aria-expanded="false">Guia do usuário</span>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="guiaUsuario.html#inscricaoB">Inscrição na biblioteca</a></li>
-                                <li><a class="dropdown-item" href="guiaUsuario.html#emprestimo">Empréstimo</a></li>
-                                <li><a class="dropdown-item" href="guiaUsuario.html#renovacao">Renovação</a></li>
-                                <li><a class="dropdown-item" href="guiaUsuario.html#reserva">Reserva</a></li>
-                                <li><a class="dropdown-item" href="guiaUsuario.html#penalidades">Penalidades</a></li>
-                                <li><a class="dropdown-item" href="guiaUsuario.html#guarda-volume">Uso do guarda-volume</a></li>
+                                <li><a class="dropdown-item" href="#inscricaoB">Inscrição na biblioteca</a></li>
+                                <li><a class="dropdown-item" href="#emprestimo">Empréstimo</a></li>
+                                <li><a class="dropdown-item" href="#renovacao">Renovação</a></li>
+                                <li><a class="dropdown-item" href="#reserva">Reserva</a></li>
+                                <li><a class="dropdown-item" href="#penalidades">Penalidades</a></li>
+                                <li><a class="dropdown-item" href="#guarda-volume">Uso do guarda-volume</a></li>
                             </ul>
                         </div>
                         <a href="pdfs.html">PDFs essenciais</a>
@@ -84,27 +82,7 @@
             </div>
         </div>
     </header>
-
-    <!--Inicio do carrosel-->
-    <div class="my-4">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false">
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="src/carrosel/c1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="10000">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item" data-bs-interval="10000">
-                    <img src="..." class="d-block w-100" alt="...">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Fim do carrosel-->
-
     <main class="container my-5">
-
         <div id="block_land"></div>
         <div id="sobre" class="meio">
             <div class="body-bd">
@@ -116,9 +94,77 @@
             
             
         </div>
+        <!--Incrição na biblioteca-->
+        <section class="mb-5" id="inscricaoB">
+            <h1>Incrição na biblioteca</h1>
+            <p>Para a inscrição na Biblioteca do IFC Videira é necessário a apresentação de alguns documentos. Confira a seguir.</p>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><b>Alunos:</b> documento com foto e comprovante de matrícula no caso de aluno.</li>
+                <li class="list-group-item"><b>Servidores:</b> documento com foto e número do SIAPE.</li>
+            </ul>
+            <p>No ato do cadastramento o usuário escolherá uma senha pessoal, de 4 ou 6 dígitos, cujo sigilo é de sua responsabilidade.</p>
+        </section>
+        <!--Empréstimo-->
+        <section class="mb-5" id="emprestimo">
+            <h1>Empréstimo</h1>
+            <p>O quadro abaixo apresenta os tipos de materiais a serem emprestados, conforme a categoria, os prazos e as quantidades:</p>
+            <img src="" alt="">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Enquanto houver débito maior que R$ 10,00 (dez reais), ou quando houver material em atraso, até liquidação do débito e a devolução da obra o usuário não poderá realizar novos empréstimos;</li>
+                <li class="list-group-item">São considerados materiais de consulta local as obras de referência (enciclopédias, dicionários, guias, etc.) e a Coleção Especial (monografias, dissertações, teses, mapas, relatórios de estágio, obras raras, etc). Estes materiais não estão disponíveis para empréstimo;</li>
+                <li class="list-group-item">Os exemplares com tarja amarela, que são títulos para permanecer na Biblioteca para consulta local, não poderão ser emprestados, exceto na sexta-feira a partir das 15h, devendo ser devolvidos pelos alunos da manhã até as 10h e pelos alunos da noite até as 20h;</li>
+                <li class="list-group-item">Os empréstimos serão encerrados 15 minutos antes do fechamento da Biblioteca, para que possam ser realizadas as atividades necessárias para o seu fechamento.</li>
+            </ul>
+        </section>
+        <!--Renovação-->
+        <section class="mb-5" id="renovacao">
+            <h1>Renovação</h1>
+            <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">O empréstimo poderá ser renovado, desde que o material não esteja em atraso, não haja pedido de reserva e o usuário não esteja com mais de R$ 10,00 em débito com a Biblioteca.</li>
+                <li class="list-group-item">A renovação do empréstimo deve ser feita pela Internet ou nos computadores da Biblioteca.</li>
+                <li class="list-group-item">A Biblioteca não se responsabiliza pelas renovações não realizadas durante as falhas no sistema, ou seja, as renovações são de inteira responsabilidade do usuário.</li>
+                <li class="list-group-item">Sugere-se que a renovação seja feita com, pelo menos, <b>um dia de antecedência</b> da data de vencimento do empréstimo. Deste modo, em caso de falha de conexão, sistema não disponível, ou outro problema que impossibilite a renovação, o usuário tenha tempo hábil para comparecer à Biblioteca com o material para renová-lo.</li>
+            </ul>
+            <div>
+               <h3>Tutorial de renovação</h3>
+                <p>Carla vai fazer</p> 
+            </div>
+        </section>
+        <!--Reserva-->
+        <section class="mb-5" id="reserva">
+            <h1>Reserva</h1>
+            <ul class="list-group list-group-flush mb-2">
+                <li class="list-group-item">O usuário poderá solicitar reserva de material para empréstimo, desde que não esteja disponível na Biblioteca para empréstimo, não esteja emprestado ao solicitante e o usuário solicitante não esteja com mais de R$ 10,00 em débito com a Biblioteca.
+                <li class="list-group-item">Os materiais reservados ficarão à disposição do usuário por até 24 horas, caso não seja retirado nesse prazo, passará ao usuário seguinte ou retornará à estante. A reserva é nominal e obedecerá a ordem cronológica de pedidos. O usuário é responsável pelo controle do prazo disponível de suas reservas.</li>
+                <li class="list-group-item">A reserva de material deve ser feita pela Internet ou nos computadores da Biblioteca.</li>
+            </ul>
+            <div>
+                <h3>Tutorial de reserva</h3>
+                <p>Carla vai fazer</p> 
+            </div>
+        </section>
+        <!--Penalidades-->
+        <section class="mb-5" id="penalidades">
+            <h1>Penalidades</h1>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Para empréstimos domiciliares, a multa por atraso na devolução é cobrada por dias úteis e por obras literárias, não literárias, periódicos e/ou chaves.</li>
+                <li class="list-group-item">O valor da multa a ser aplicada é de R$1,00 (um real) por dia para cada obra e/ou chave de armário em atraso.</li>
+                <li class="list-group-item">As taxas de multas serão pagas pelo usuário através de GRU gerada preferencialmente na biblioteca ou por meio do site, com valor a ser consultado na biblioteca: <a href="#" target="_blank">ainda não tem</a> Para a devida quitação do valor do débito, é imprescindível a apresentação do comprovante de pagamento na biblioteca.</li>
+            </ul>
+        </section>
+        <!--Guarda-volume-->
+        <section class="mb-5" id="guarda-volume">
+            <h1>Guarda-volume</h1>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">É obrigatório o uso do guarda-volume, no qual o usuário deverá depositar pastas, bolsas, mochilas ou similares, enquanto estiver na Biblioteca.</li>
+                <li class="list-group-item">O uso do guarda-volume é permitido somente durante a permanência do usuário na Biblioteca.</li>
+                <li class="list-group-item">A biblioteca não se responsabiliza pelo material deixado no guarda-volume.</li>
+            </ul>
+        </section>
+
+
 
     </main>
-
     <footer class="py-5">
         <div class="m-0 row d-flex justify-content-evenly d-flex align-items-center">
             <div class="col-6 d-flex align-items-center" style="width: 200px">
@@ -218,5 +264,4 @@
         }
     </script>
 </body>
-
 </html>
