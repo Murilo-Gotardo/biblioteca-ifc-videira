@@ -176,19 +176,6 @@ footer {
     padding: 20px;
 }
 
-@media screen and (max-width: 768px) {
-    .meio {
-        left: 50%;
-        top: 35.4%;
-        margin-left: -150px;
-        margin-top: -200px;
-        height: 600px;
-        font-size: 14px;
-    }
-
-
-}
-
 .list-group-item {
     border-color: var(--bg-primary-color);
 }
@@ -210,4 +197,53 @@ footer {
     border: 0;
     color: var(--bg-secondary-color);
     background-color: transparent;
+}
+
+.card-title, .card-text {
+    color: var(--bg-secondary-color);
+}
+
+.a-p-1, .a-p-2 {
+    margin-top: 160px;
+}
+
+.a-p-3 {
+    margin-top: 136px;
+}
+
+@media screen and (max-width: 1024px) {
+    .a-p-1 {
+        margin-top: 75px;
+    }
+    
+    .a-p-2 {
+        margin-top: 50px;
+    }
+
+    .a-p-3 {
+        margin-top: 27px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .meio {
+        left: 50%;
+        top: 35.4%;
+        margin-left: -150px;
+        margin-top: -200px;
+        height: 600px;
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width: 320px) {
+    .a-p-1 {
+        margin-top: 64px;
+    }
+    
+    .a-p-2, .a-p-3 {
+        margin-top: 16px;
+    }
 }
