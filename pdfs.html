@@ -19,13 +19,9 @@
 </head>
 
 <body>
-    <header>
+    <header id="navbar">
         <div class="container d-flex justify-content-between">
             <div class="d-flex align-items-center" style="width: 61.97px;">
-
-
-
-
                 <i id="open" class="fa-solid fa-bars menu" onclick="openNav()"></i>
 
                 <div id="sideNav" class="sidenav">
@@ -46,21 +42,13 @@
                             </ul>
                         </div>
                         <a href="pdfs.html">PDFs essenciais</a>
-                        <a href="#">Exemplos de trabalhos</a>
+                        <a href="https://biblioteca.ifc.edu.br/normalizacao-de-trabalhos/" target="_blank">Exemplos de trabalhos</a>
                         <a href="javascript:void(0)" onclick="openContatoDB()">Contato</a>
                         <a href="https://biblioteca.ifc.edu.br" target="_blank">SIBI - IFC</a>
                     </div>
-
-
-
                     <div id="main">
-
-
-
                     </div>
                 </div>
-
-
             </div>
             <div class="">
                 <h1 class="m-0">Biblioteca</h1>
@@ -69,18 +57,12 @@
             <div id="horario" class="d-flex align-items-center" style="max-width: 61.97px;">
                 <!--<p id="hora" class="m-0"></p>--> 
             </div>
-            
-
-
         </div>
         <div class="he-2 d-flex justify-content-center">
             <div class="d-flex align-items-center">
-
                 <a href="index.html" class="me-3">Início</a>
 
-
                 <a href="https://pergamum.ifc.edu.br/pergamum_ifc/biblioteca/index.php" target="_blank">Pergamum</a>
-
             </div>
         </div>
     </header>
@@ -118,7 +100,7 @@
                                 <div class="card-body ">
                                     <h5 class="card-title">Memórias póstumas de Brás Cubas</h5>
                                     <p class="card-text m-0">Machado de Assis</p>
-                                    <a href="src/pdfs/memoriasBras.pdf" target="_blank" class="btn a-p-3">Baixar PDF</a>
+                                    <a href="src/pdfs/memoriasBras.pdf" download target="_blank" class="btn a-p-3">Baixar PDF</a>
                                 </div>
                             </div>
                         </div>
@@ -134,7 +116,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Macunaíma</h5>
                                     <p class="card-text m-0">Mario de Andrade</p>
-                                    <a href="src/pdfs/CastroDigital_livro_Macunaima_Mario_de_Andrade.pdf" target="_blank" class="btn a-p-1">Baixar PDF</a>
+                                    <a href="src/pdfs/CastroDigital_livro_Macunaima_Mario_de_Andrade.pdf" download target="_blank" class="btn a-p-1">Baixar PDF</a>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +132,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Eu e outras poesias</h5>
                                     <p class="card-text m-0">Augusto dos Anjos</p>
-                                    <a href="src/pdfs/euAugustoDosAnjos.pdf" target="_blank" class="btn a-p-2">Baixar PDF</a>
+                                    <a href="src/pdfs/euAugustoDosAnjos.pdf" download target="_blank" class="btn a-p-2">Baixar PDF</a>
                                 </div>
                             </div>
                         </div>
@@ -175,6 +157,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
+    <script src="js/barraFixa.js"></script>
     <script src="js/copiar.js"></script>
     <script src="js/sideBar.js"></script>
     <script src="js/feriados.js"></script>

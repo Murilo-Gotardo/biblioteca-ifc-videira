@@ -8,8 +8,6 @@ body {
     --bg-secondary-color: hsl(170, 54%, 76%);
     --bg-tertiary-color: hsl(175, 93%, 31%);
     --bg-quarternary-color: hsl(64, 100%, 79%);
-
-
 }
 
 header {
@@ -51,7 +49,6 @@ header {
     border: solid var(--bg-secondary-color) 2px;
     color: var(--bg-secondary-color);
 
-
     transition: background-color 300ms ease-in-out, border 300ms ease-in-out;
 }
 
@@ -71,6 +68,7 @@ footer {
 }
 
 /* The side navigation menu */
+
 .sidenav {
     height: 100%;
     /* 100% Full-height */
@@ -93,6 +91,7 @@ footer {
 }
 
 /* The navigation menu links */
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -109,7 +108,6 @@ footer {
     color: var(--bg-secondary-color);
     display: block;
     transition: 0.3s;
-
 }
 
 .sidenav .dropdown-menu {
@@ -126,7 +124,6 @@ footer {
     cursor: pointer;
 }
 
-/* Position and style of the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
     top: 0;
@@ -135,20 +132,26 @@ footer {
     margin-left: 50px;
 }
 
+/*end of the side navigation menu*/
+
+#navbar {
+    overflow: hidden;
+    z-index: 1;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+main {
+    padding-top: 60px;
+}
+
 #main {
     transition: margin-left .5s;
     padding: 20px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-    .sidenav {
-        padding-top: 15px;
-    }
-
-    .sidenav a {
-        font-size: 18px;
-    }
 }
 
 .card {
@@ -190,20 +193,21 @@ footer {
     border-radius: 2px;
     margin: 0;
     transition: transform 0.6s cubic-bezier(0.12, 0, 0.39, 0);
-
 }
 
-.btn-email{
+.btn-email {
     border: 0;
     color: var(--bg-secondary-color);
     background-color: transparent;
 }
 
-.card-title, .card-text {
+.card-title,
+.card-text {
     color: var(--bg-secondary-color);
 }
 
-.a-p-1, .a-p-2 {
+.a-p-1,
+.a-p-2 {
     margin-top: 160px;
 }
 
@@ -215,7 +219,7 @@ footer {
     .a-p-1 {
         margin-top: 75px;
     }
-    
+
     .a-p-2 {
         margin-top: 50px;
     }
@@ -234,16 +238,45 @@ footer {
         height: 600px;
         font-size: 14px;
     }
+}
 
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
 
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 320px) {
     .a-p-1 {
         margin-top: 64px;
     }
-    
-    .a-p-2, .a-p-3 {
+
+    .a-p-2,
+    .a-p-3 {
         margin-top: 16px;
     }
+}
+
+::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+    background-color: var(--bg-secondary-color);
+    border-radius: 40px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--bg-tertiary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg-primary-color);
+    border-radius: 10px;
+    background-image: -webkit-linear-gradient(90deg,
+            var(--bg-tertiary-color) 25%,
+            transparent 25%,
+            var(--bg-tertiary-color) 10%,
+            transparent)
 }

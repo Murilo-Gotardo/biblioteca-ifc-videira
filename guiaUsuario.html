@@ -17,13 +17,9 @@
     <title>Guia do usuário</title>
 </head>
 <body>
-    <header>
+    <header id="navbar">
         <div class="container d-flex justify-content-between">
             <div class="d-flex align-items-center" style="width: 61.97px;">
-
-
-
-
                 <i id="open" class="fa-solid fa-bars menu" onclick="openNav()"></i>
 
                 <div id="sideNav" class="sidenav">
@@ -44,21 +40,13 @@
                             </ul>
                         </div>
                         <a href="pdfs.html">PDFs essenciais</a>
-                        <a href="#">Exemplos de trabalhos</a>
+                        <a href="https://biblioteca.ifc.edu.br/normalizacao-de-trabalhos/" target="_blank">Exemplos de trabalhos</a>
                         <a href="javascript:void(0)" onclick="openContatoDB()">Contato</a>
                         <a href="https://biblioteca.ifc.edu.br" target="_blank">SIBI - IFC</a>
                     </div>
-
-
-
                     <div id="main">
-
-
-
                     </div>
                 </div>
-
-
             </div>
             <div class="">
                 <h1 class="m-0">Biblioteca</h1>
@@ -67,9 +55,6 @@
             <div id="horario" class="d-flex align-items-center" style="max-width: 61.97px;">
                 <!--<p id="hora" class="m-0"></p>--> 
             </div>
-            
-
-
         </div>
         <div class="he-2 d-flex justify-content-center">
             <div class="d-flex align-items-center">
@@ -82,6 +67,7 @@
             </div>
         </div>
     </header>
+
     <main class="container my-5">
         <!--caixas de diálogo-->
         <div id="sobreDB" class="meio">
@@ -156,7 +142,7 @@
             <h1>Penalidades</h1>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Para empréstimos domiciliares, a multa por atraso na devolução é cobrada por dias úteis e por obras literárias, não literárias, periódicos e/ou chaves.</li>
-                <li class="list-group-item">O valor da multa a ser aplicada é de R$1,00 (um real) por dia para cada obra e/ou chave de armário em atraso.</li>
+                <li class="list-group-item">O valor da multa a ser aplicada é de R$1,00 (um real) por dia para cada obra em atraso.</li>
                 <li class="list-group-item">As taxas de multas serão pagas pelo usuário através de GRU gerada preferencialmente na biblioteca ou por meio do site, com valor a ser consultado na biblioteca: <a href="#" target="_blank">ainda não tem</a> Para a devida quitação do valor do débito, é imprescindível a apresentação do comprovante de pagamento na biblioteca.</li>
             </ul>
         </section>
@@ -169,10 +155,8 @@
                 <li class="list-group-item">A biblioteca não se responsabiliza pelo material deixado no guarda-volume.</li>
             </ul>
         </section>
-
-
-
     </main>
+
     <footer class="py-5">
         <div class="m-0 row d-flex justify-content-evenly d-flex align-items-center">
             <div class="col-6 d-flex align-items-center" style="width: 200px">
@@ -188,6 +172,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
+    <script src="js/barraFixa.js"></script>
     <script src="js/copiar.js"></script>
     <script src="js/sideBar.js"></script>
     <script src="js/feriados.js"></script>
