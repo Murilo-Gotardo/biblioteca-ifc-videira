@@ -145,8 +145,8 @@ footer {
     width: 100%;
 }
 
-.sticky+main {
-    padding-top: 60px;
+.sticky + main {
+    padding-top: 48px;
 }
 
 #main {
@@ -159,7 +159,7 @@ footer {
 }
 
 .meio {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 44.69%;
     margin-left: -400px;

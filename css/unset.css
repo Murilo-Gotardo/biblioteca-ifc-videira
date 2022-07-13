@@ -6,3 +6,6 @@ h4 {
     margin: 0;
 }
 
+.showFix {
+    transform: translate(32px, 120px) !important;
+}
