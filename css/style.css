@@ -146,6 +146,10 @@ footer {
 }
 
 .sticky + main {
+    padding-top: 100px;
+}
+
+.sticky + .mainIndex {
     padding-top: 48px;
 }
 
