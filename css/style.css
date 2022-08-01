@@ -145,11 +145,11 @@ footer {
     width: 100%;
 }
 
-.sticky + main {
+.sticky+main {
     padding-top: 100px;
 }
 
-.sticky + .mainIndex {
+.sticky+.mainIndex {
     padding-top: 48px;
 }
 
@@ -265,7 +265,16 @@ footer {
     }
 }
 
-::-webkit-scrollbar-track, ::-webkit-scrollbar-track-piece {
+@media screen and (max-width: 768px) {
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
     background-color: var(--bg-secondary-color);
     border-radius: 40px;
 }
