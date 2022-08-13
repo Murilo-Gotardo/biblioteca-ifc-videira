@@ -96,7 +96,7 @@
             </div>
         </div>
         <!--fim das caixas de diálogo-->
-        <div class="container">
+        <div class="container" id="pdfRes">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card mb-3" style="max-width: 540px;">
@@ -312,6 +312,14 @@
             document.getElementById("contatoDB").style.width = "0px";
             openNav();
         }
+    </script>
+    <script>
+        let w = window.screen.width;
+        let pdfRes = document.getElementById("pdfRes");
+
+        if (w == 768) {
+            pdfRes.classList.add("w-50");
+        };
     </script>
 
 </body>

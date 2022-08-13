@@ -219,6 +219,20 @@ footer {
     margin-top: 136px;
 }
 
+@media screen and (max-width: 1400px) {
+    .a-p-1 {
+        margin-top: 118px;
+    }
+
+    .a-p-2 {
+        margin-top: 94px;
+    }
+
+    .a-p-3 {
+        margin-top: 70px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .a-p-1 {
         margin-top: 75px;
@@ -267,8 +281,7 @@ footer {
 
 @media screen and (max-width: 768px) {
     footer {
-        position: absolute;
-        bottom: 0;
+        top: 100%;
         width: 100%;
     }
 }
