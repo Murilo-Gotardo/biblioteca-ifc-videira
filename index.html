@@ -27,9 +27,9 @@
 
                 <div id="sideNav" class="sidenav">
                     <div>
-                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-angle-left"></i></a>
+                        <a href="#" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-angle-left"></i></a>
                         <a href="index.html">Início</a>
-                        <a href="javascript:void(0)" onclick="openSobreDB()">Sobre</a>
+                        <a href="#" onclick="openSobreDB()">Sobre</a>
                         <div class="btn-group">
                             <span class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown"
                                 aria-expanded="false">Guia do usuário</span>
@@ -52,7 +52,7 @@
                         </div>
                         <a href="pdfs.html">PDFs essenciais</a>
                         <a href="https://biblioteca.ifc.edu.br/normalizacao-de-trabalhos/" target="_blank">Exemplos de trabalhos</a>
-                        <a href="javascript:void(0)" onclick="openContatoDB()">Contato</a>
+                        <a href="#" onclick="openContatoDB()">Contato</a>
                         <a href="https://biblioteca.ifc.edu.br" target="_blank">SIBI - IFC</a>
                     </div>
                     <div id="main">
@@ -98,7 +98,7 @@
             <!--caixas de diálogo-->
             <div id="sobreDB" class="meio">
                 <div class="body-bd">
-                    <a href="javascript:void(0)" id="closeSobreDB" class="closebtn float-end" onclick="closeSobreDB()"><i class="fa-solid fa-xmark"></i></a>
+                    <a href="#" id="closeSobreDB" class="closebtn float-end" onclick="closeSobreDB()"><i class="fa-solid fa-xmark"></i></a>
                     <p class="mt-5">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias mollitia quam consectetur ipsam tenetur molestias culpa quidem. Temporibus eum impedit, explicabo perferendis error cupiditate assumenda voluptas, corporis officiis mollitia recusandae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ullam architecto quasi accusantium. Id doloribus, laudantium consequuntur explicabo ab error deserunt esse itaque animi nostrum odio? Veritatis culpa modi ullam.
                     </p>
@@ -107,7 +107,7 @@
             
             <div id="contatoDB" class="meio">
                 <div class="body-bd">
-                    <a href="javascript:void(0)" class="closebtn float-end" onclick="closeContatoDB()"><i class="fa-solid fa-xmark"></i></a>
+                    <a href="#" class="closebtn float-end" onclick="closeContatoDB()"><i class="fa-solid fa-xmark"></i></a>
                     <h2>CONTATO</h2>
                     <p class="mt-5">Entre em contato com a nossa equipe:</p>
                     <p>Email: biblioteca.videira@ifc.edu.br</p>
@@ -133,8 +133,8 @@
                 <p>Desenvolvido por: Murilo Gotardo Pommerening (estagiário)</p>
             </div>    
             <div class="d-flex justify-content-evenly">
-                <p>Graziele (supervisora)</p>
                 <p>Leila Lisiane Rossi (orientadora)</p>
+                <p>Grasiele Reisdorfer (supervisora)</p>
             </div>    
         </section>
     </footer>
@@ -152,20 +152,10 @@
         let h = DateTime.local().valueOf();
         let d = DateTime.local().toFormat('E');
 
-
-
-
-
-
         let i = DateTime.fromISO("07:30:00").valueOf();
         let f = DateTime.fromISO("22:00:00").valueOf();
 
-
-
-
-
         if ((d == 6) || (d == 7)) {
-
             const h2 = document.createElement("h4");
             const node = document.createTextNode("Fechada");
             h2.appendChild(node);
@@ -174,7 +164,6 @@
             element.appendChild(h2);
 
         } else {
-
             if (h >= i && h <= f) {
 
                 const h2 = document.createElement("h4");
@@ -191,7 +180,6 @@
                 const element = document.getElementById("horario");
                 element.appendChild(h2);
             }
-
         }
 
 

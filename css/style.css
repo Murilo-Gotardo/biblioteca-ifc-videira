@@ -10,6 +10,10 @@ body {
     --bg-quarternary-color: hsl(64, 100%, 79%);
 }
 
+img, video{
+    width: 100%;
+}
+
 header {
     background-color: var(--bg-primary-color);
     color: var(--bg-secondary-color);
