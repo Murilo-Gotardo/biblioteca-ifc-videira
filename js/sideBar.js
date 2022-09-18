@@ -1,9 +1,9 @@
 function openNav() {
-    document.getElementById("sideNav").style.width = "300px";
+    document.getElementById("sideNav").style.left = "0px";
     document.getElementById("open").style.display = "none";
 }
 
 function closeNav() {
-    document.getElementById("sideNav").style.width = "0";
+    document.getElementById("sideNav").style.left = "-300px";
     document.getElementById("open").style.display = "inline-block"
 }
