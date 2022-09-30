@@ -3,6 +3,11 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+#barra-brasil a {
+    font-family: 'Comfortaa', cursive !important;
+    font-family: 'Oswald', sans-serif !important;
+}
+
 :root {
     --bg-primary-color: hsl(180, 100%, 17%);
     --bg-secondary-color: hsl(170, 54%, 76%);
@@ -17,6 +22,15 @@ img, video{
 header {
     background-color: var(--bg-primary-color);
     color: var(--bg-secondary-color);
+}
+
+section:target-within {
+    background-color: red;
+}
+
+#inscricaoB:target, #emprestimo:target, #renovacao:target, #reserva:target{
+    transition: margin-top 250ms ease-in-out;
+    margin-top: 200px;
 }
 
 .mar {
@@ -36,6 +50,10 @@ header {
 
 .menu:hover {
     color: var(--bg-tertiary-color);
+    cursor: pointer;
+}
+
+.pointer {
     cursor: pointer;
 }
 
@@ -90,6 +108,8 @@ footer {
     /* Place content 60px from the top */
     transition: 0.5s;
     /* 0.5 second transition effect to slide in the sidenav */
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 /* The navigation menu links */
@@ -148,11 +168,16 @@ footer {
 }
 
 .sticky+main {
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 .sticky+.mainIndex {
     padding-top: 48px;
+}
+
+.my-6 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 #main {

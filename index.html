@@ -21,16 +21,29 @@
 
 <body>
     <header id="navbar">
+        <!-- Barra Brasil 
+        <div id="barra-brasil" class="hidden-print"></div>
+        <script src="https://barra.brasil.gov.br/barra.js" type="text/javascript" defer></script>
+        Barra Brasil -->
+        
+        <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+            <ul id="menu-barra-temp" style="list-style:none;">
+              <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
+                  <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
+              </li>
+            </ul>
+        </div>
+        
         <div class="container d-flex justify-content-between">
             <div class="d-flex align-items-center" style="width: 61.97px;">
                 <i id="open" class="fa-solid fa-bars menu" onclick="openNav()"></i>
 
                 <div id="sideNav" class="sidenav">
                     <div>
-                        <a href="#" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-angle-left"></i></a>
+                        <a class="closebtn pointer" onclick="closeNav()"><i class="fa-solid fa-angle-left"></i></a>
                         <a href="index.html">Início</a>
-                        <a href="#" onclick="openSobreDB()">Sobre</a>
-                        <div class="btn-group">
+                        <a class="pointer" onclick="openSobreDB()">Sobre</a>
+                        <div class="btn-group dorp">
                             <span class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown"
                                 aria-expanded="false">Guia do usuário</span>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
@@ -52,7 +65,7 @@
                         </div>
                         <a href="pdfs.html">PDFs essenciais</a>
                         <a href="https://biblioteca.ifc.edu.br/normalizacao-de-trabalhos/" target="_blank">Exemplos de trabalhos</a>
-                        <a href="#" onclick="openContatoDB()">Contato</a>
+                        <a class="pointer" onclick="openContatoDB()">Contato</a>
                         <a href="https://biblioteca.ifc.edu.br" target="_blank">SIBI - IFC</a>
                     </div>
                     <div id="main">
@@ -75,7 +88,7 @@
         </div>
     </header>
 
-    <main class="my-5 mainIndex">
+    <main class="my-6 mainIndex">
         <!--Inicio do carrosel-->
         <div class="my-5">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -98,7 +111,7 @@
             <!--caixas de diálogo-->
             <div id="sobreDB" class="meio">
                 <div class="body-bd">
-                    <a href="#" id="closeSobreDB" class="closebtn float-end" onclick="closeSobreDB()"><i class="fa-solid fa-xmark"></i></a>
+                    <a id="closeSobreDB" class="closebtn float-end pointer" onclick="closeSobreDB()"><i class="fa-solid fa-xmark"></i></a>
                     <p class="mt-5">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias mollitia quam consectetur ipsam tenetur molestias culpa quidem. Temporibus eum impedit, explicabo perferendis error cupiditate assumenda voluptas, corporis officiis mollitia recusandae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ullam architecto quasi accusantium. Id doloribus, laudantium consequuntur explicabo ab error deserunt esse itaque animi nostrum odio? Veritatis culpa modi ullam.
                     </p>
@@ -107,7 +120,7 @@
             
             <div id="contatoDB" class="meio">
                 <div class="body-bd">
-                    <a href="#" class="closebtn float-end" onclick="closeContatoDB()"><i class="fa-solid fa-xmark"></i></a>
+                    <a class="closebtn float-end pointer" onclick="closeContatoDB()"><i class="fa-solid fa-xmark"></i></a>
                     <h2>CONTATO</h2>
                     <p class="mt-5">Entre em contato com a nossa equipe:</p>
                     <p>Email: biblioteca.videira@ifc.edu.br</p>
@@ -234,6 +247,7 @@
             openNav();
         }
     </script>
+    <script src="https://araquari.ifc.edu.br/wp-content/themes/ifc-v2/assets/javascripts/barra_2.0.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -18,20 +18,34 @@
     <title>Guia do usuário</title>
 </head>
 <body>
+    
     <header id="navbar">
+         <!-- Barra Brasil 
+        <div id="barra-brasil" class="hidden-print"></div>
+        <script src="https://barra.brasil.gov.br/barra.js" type="text/javascript" defer></script>
+        Barra Brasil -->
+        
+        <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+            <ul id="menu-barra-temp" style="list-style:none;">
+              <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED">
+                  <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a>
+              </li>
+            </ul>
+        </div>
+
         <div class="container d-flex justify-content-between">
             <div class="d-flex align-items-center" style="width: 61.97px;">
                 <i id="open" class="fa-solid fa-bars menu" onclick="openNav()"></i>
 
                 <div id="sideNav" class="sidenav">
                     <div>
-                        <a href="#" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-angle-left"></i></a>
+                        <a class="closebtn pointer" onclick="closeNav()"><i class="fa-solid fa-angle-left"></i></a>
                         <a href="index.html">Início</a>
-                        <a href="#" onclick="openSobreDB()">Sobre</a>
+                        <a class="pointer" onclick="openSobreDB()">Sobre</a>
                         <div class="btn-group">
                             <span class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown"
                                 aria-expanded="false">Guia do usuário</span>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                            <ul class="dropdown-menu dropdown-menu-end dopr" aria-labelledby="dropdownMenuButton" >
                                 <li><a class="dropdown-item" href="guiaUsuario.html#inscricaoB">Inscrição na biblioteca</a></li>
                                 <li><a class="dropdown-item" href="guiaUsuario.html#emprestimo">Empréstimo</a></li>
                                 <li><a class="dropdown-item" href="guiaUsuario.html#renovacao">Renovação</a></li>
@@ -50,7 +64,7 @@
                         </div>
                         <a href="pdfs.html">PDFs essenciais</a>
                         <a href="https://biblioteca.ifc.edu.br/normalizacao-de-trabalhos/" target="_blank">Exemplos de trabalhos</a>
-                        <a href="javascript:void(0)" onclick="openContatoDB()">Contato</a>
+                        <a class="pointer" onclick="openContatoDB()">Contato</a>
                         <a href="https://biblioteca.ifc.edu.br" target="_blank">SIBI - IFC</a>
                     </div>
                     <div id="main">
@@ -73,11 +87,11 @@
         </div>
     </header>
 
-    <main class="container my-5">
+    <main class="container my-6">
         <!--caixas de diálogo-->
         <div id="sobreDB" class="meio">
             <div class="body-bd">
-                <a href="#" id="closeSobreDB" class="closebtn float-end" onclick="closeSobreDB()"><i class="fa-solid fa-xmark"></i></a>
+                <a id="closeSobreDB" class="closebtn float-end pointer" onclick="closeSobreDB()"><i class="fa-solid fa-xmark"></i></a>
                 <p class="mt-5">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias mollitia quam consectetur ipsam tenetur molestias culpa quidem. Temporibus eum impedit, explicabo perferendis error cupiditate assumenda voluptas, corporis officiis mollitia recusandae?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut ullam architecto quasi accusantium. Id doloribus, laudantium consequuntur explicabo ab error deserunt esse itaque animi nostrum odio? Veritatis culpa modi ullam.
                 </p>
@@ -86,7 +100,7 @@
         
         <div id="contatoDB" class="meio">
             <div class="body-bd">
-                <a href="#" class="closebtn float-end" onclick="closeContatoDB()"><i class="fa-solid fa-xmark"></i></a>
+                <a class="closebtn float-end pointer" onclick="closeContatoDB()"><i class="fa-solid fa-xmark"></i></a>
                 <h2>CONTATO</h2>
                 <p class="mt-5">Entre em contato com a nossa equipe:</p>
                 <p>Email: biblioteca.videira@ifc.edu.br</p>
@@ -95,7 +109,7 @@
         </div>
         <!--fim das caixas de diálogo-->
         <!--Incrição na biblioteca-->
-        <section class="mb-5" id="inscricaoB">
+        <section class="mb-5 tira" id="inscricaoB">
             <h1>Incrição na biblioteca</h1>
             <p>Para a inscrição na Biblioteca do IFC Videira é necessário a apresentação de alguns documentos. Confira a seguir;</p>
             <ul class="list-group list-group-flush">
@@ -105,7 +119,7 @@
             <p>No ato do cadastramento o usuário escolherá uma senha pessoal, de 4 ou 6 dígitos, cujo sigilo é de sua responsabilidade.</p>
         </section>
         <!--Empréstimo-->
-        <section class="mb-5" id="emprestimo">
+        <section class="mb-5 tira" id="emprestimo">
             <h1>Empréstimo</h1>
             <p>O quadro abaixo apresenta os tipos de materiais a serem emprestados, conforme a categoria, os prazos e as quantidades:</p>
             <img src="" alt="">
@@ -117,7 +131,7 @@
             </ul>
         </section>
         <!--Renovação-->
-        <section class="mb-5" id="renovacao">
+        <section class="mb-5 tira" id="renovacao">
             <h1>Renovação</h1>
             <ul class="list-group list-group-flush mb-2">
                 <li class="list-group-item">O empréstimo poderá ser renovado, desde que o material não esteja em atraso, não haja pedido de reserva e o usuário não esteja com mais de R$ 10,00 em débito com a Biblioteca;</li>
@@ -153,7 +167,7 @@
             </div>
         </section>
         <!--Reserva-->
-        <section class="mb-5" id="reserva">
+        <section class="mb-5 tira" id="reserva">
             <h1>Reserva</h1>
             <ul class="list-group list-group-flush mb-2">
                 <li class="list-group-item">O usuário poderá solicitar reserva de material para empréstimo, desde que não esteja disponível na Biblioteca para empréstimo, não esteja emprestado ao solicitante e o usuário solicitante não esteja com mais de R$ 10,00 em débito com a Biblioteca;</li>
@@ -185,7 +199,7 @@
             </div>
         </section>
         <!--Penalidades-->
-        <section class="mb-5" id="penalidades">
+        <section class="mb-5 tira" id="penalidades">
             <h1>Penalidades</h1>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Para empréstimos domiciliares, a multa por atraso na devolução é cobrada por dias úteis e por obras literárias, não literárias, periódicos e/ou chaves;</li>
@@ -194,7 +208,7 @@
             </ul>
         </section>
         <!--Guarda-volume-->
-        <section class="mb-5" id="guarda-volume">
+        <section class="mb-5 tira" id="guarda-volume">
             <h1>Guarda-volume</h1>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">É obrigatório o uso do guarda-volume, no qual o usuário deverá depositar pastas, bolsas, mochilas ou similares, enquanto estiver na Biblioteca;</li>
@@ -288,7 +302,6 @@
             
         //     document.getElementById('hora').textContent = h;
         // }, 1000)
-
         
     </script>
     <!--Responsividade para as caixas de diálogo-->
@@ -332,5 +345,6 @@
             openNav();
         }
     </script>
+    <script src="https://araquari.ifc.edu.br/wp-content/themes/ifc-v2/assets/javascripts/barra_2.0.js" type="text/javascript"></script>
 </body>
 </html>
