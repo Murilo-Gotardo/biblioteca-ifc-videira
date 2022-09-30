@@ -8,6 +8,10 @@ body {
     font-family: 'Oswald', sans-serif !important;
 }
 
+#barra-brasil .conteudo-barra-brasil nav {
+    overflow-x: hidden !important;
+}
+
 :root {
     --bg-primary-color: hsl(180, 100%, 17%);
     --bg-secondary-color: hsl(170, 54%, 76%);
@@ -31,6 +35,20 @@ section:target-within {
 #inscricaoB:target, #emprestimo:target, #renovacao:target, #reserva:target{
     transition: margin-top 250ms ease-in-out;
     margin-top: 200px;
+}
+
+@media screen and (max-width: 1440px) {
+    #penalidades:target {
+        transition: margin-top 250ms ease-in-out;
+        margin-top: 160px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #penalidades:target {
+        transition: margin-top 250ms ease-in-out;
+        margin-top: 175px;
+    }
 }
 
 .mar {
@@ -230,6 +248,12 @@ footer {
     border: 0;
     color: var(--bg-secondary-color);
     background-color: transparent;
+}
+
+@media screen and (max-width: 375px) {
+    #credito {
+        text-align: center;
+    }
 }
 
 .card-title,

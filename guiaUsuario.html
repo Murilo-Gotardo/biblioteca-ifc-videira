@@ -18,9 +18,8 @@
     <title>Guia do usuário</title>
 </head>
 <body>
-    
     <header id="navbar">
-         <!-- Barra Brasil 
+        <!-- Barra Brasil 
         <div id="barra-brasil" class="hidden-print"></div>
         <script src="https://barra.brasil.gov.br/barra.js" type="text/javascript" defer></script>
         Barra Brasil -->
@@ -32,7 +31,7 @@
               </li>
             </ul>
         </div>
-
+        
         <div class="container d-flex justify-content-between">
             <div class="d-flex align-items-center" style="width: 61.97px;">
                 <i id="open" class="fa-solid fa-bars menu" onclick="openNav()"></i>
@@ -42,16 +41,16 @@
                         <a class="closebtn pointer" onclick="closeNav()"><i class="fa-solid fa-angle-left"></i></a>
                         <a href="index.html">Início</a>
                         <a class="pointer" onclick="openSobreDB()">Sobre</a>
-                        <div class="btn-group">
+                        <div class="btn-group dorp">
                             <span class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown"
                                 aria-expanded="false">Guia do usuário</span>
-                            <ul class="dropdown-menu dropdown-menu-end dopr" aria-labelledby="dropdownMenuButton" >
-                                <li><a class="dropdown-item" href="guiaUsuario.html#inscricaoB">Inscrição na biblioteca</a></li>
-                                <li><a class="dropdown-item" href="guiaUsuario.html#emprestimo">Empréstimo</a></li>
-                                <li><a class="dropdown-item" href="guiaUsuario.html#renovacao">Renovação</a></li>
-                                <li><a class="dropdown-item" href="guiaUsuario.html#reserva">Reserva</a></li>
-                                <li><a class="dropdown-item" href="guiaUsuario.html#penalidades">Penalidades</a></li>
-                                <li><a class="dropdown-item" href="guiaUsuario.html#guarda-volume">Uso do guarda-volume</a></li>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                                <li><a class="dropdown-item" onclick="closeNav()" href="guiaUsuario.html#inscricaoB">Inscrição na biblioteca</a></li>
+                                <li><a class="dropdown-item" onclick="closeNav()" href="guiaUsuario.html#emprestimo">Empréstimo</a></li>
+                                <li><a class="dropdown-item" onclick="closeNav()" href="guiaUsuario.html#renovacao">Renovação</a></li>
+                                <li><a class="dropdown-item" onclick="closeNav()" href="guiaUsuario.html#reserva">Reserva</a></li>
+                                <li><a class="dropdown-item" onclick="closeNav()" href="guiaUsuario.html#penalidades">Penalidades</a></li>
+                                <li><a class="dropdown-item" onclick="closeNav()" href="guiaUsuario.html#guarda-volume">Uso do guarda-volume</a></li>
                             </ul>
                         </div>
                         <div class="btn-group">
@@ -109,7 +108,7 @@
         </div>
         <!--fim das caixas de diálogo-->
         <!--Incrição na biblioteca-->
-        <section class="mb-5 tira" id="inscricaoB">
+        <section class="mb-5" id="inscricaoB">
             <h1>Incrição na biblioteca</h1>
             <p>Para a inscrição na Biblioteca do IFC Videira é necessário a apresentação de alguns documentos. Confira a seguir;</p>
             <ul class="list-group list-group-flush">
@@ -119,7 +118,7 @@
             <p>No ato do cadastramento o usuário escolherá uma senha pessoal, de 4 ou 6 dígitos, cujo sigilo é de sua responsabilidade.</p>
         </section>
         <!--Empréstimo-->
-        <section class="mb-5 tira" id="emprestimo">
+        <section class="mb-5" id="emprestimo">
             <h1>Empréstimo</h1>
             <p>O quadro abaixo apresenta os tipos de materiais a serem emprestados, conforme a categoria, os prazos e as quantidades:</p>
             <img src="" alt="">
@@ -131,7 +130,7 @@
             </ul>
         </section>
         <!--Renovação-->
-        <section class="mb-5 tira" id="renovacao">
+        <section class="mb-5" id="renovacao">
             <h1>Renovação</h1>
             <ul class="list-group list-group-flush mb-2">
                 <li class="list-group-item">O empréstimo poderá ser renovado, desde que o material não esteja em atraso, não haja pedido de reserva e o usuário não esteja com mais de R$ 10,00 em débito com a Biblioteca;</li>
@@ -167,7 +166,7 @@
             </div>
         </section>
         <!--Reserva-->
-        <section class="mb-5 tira" id="reserva">
+        <section class="mb-5" id="reserva">
             <h1>Reserva</h1>
             <ul class="list-group list-group-flush mb-2">
                 <li class="list-group-item">O usuário poderá solicitar reserva de material para empréstimo, desde que não esteja disponível na Biblioteca para empréstimo, não esteja emprestado ao solicitante e o usuário solicitante não esteja com mais de R$ 10,00 em débito com a Biblioteca;</li>
@@ -199,7 +198,7 @@
             </div>
         </section>
         <!--Penalidades-->
-        <section class="mb-5 tira" id="penalidades">
+        <section class="mb-5" id="penalidades">
             <h1>Penalidades</h1>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Para empréstimos domiciliares, a multa por atraso na devolução é cobrada por dias úteis e por obras literárias, não literárias, periódicos e/ou chaves;</li>
@@ -208,7 +207,7 @@
             </ul>
         </section>
         <!--Guarda-volume-->
-        <section class="mb-5 tira" id="guarda-volume">
+        <section class="mb-5" id="guarda-volume">
             <h1>Guarda-volume</h1>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">É obrigatório o uso do guarda-volume, no qual o usuário deverá depositar pastas, bolsas, mochilas ou similares, enquanto estiver na Biblioteca;</li>
