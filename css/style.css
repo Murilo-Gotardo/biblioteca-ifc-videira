@@ -37,20 +37,6 @@ section:target-within {
     margin-top: 200px;
 }
 
-@media screen and (max-width: 1440px) {
-    #penalidades:target {
-        transition: margin-top 250ms ease-in-out;
-        margin-top: 160px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    #penalidades:target {
-        transition: margin-top 250ms ease-in-out;
-        margin-top: 175px;
-    }
-}
-
 .mar {
     margin-right: 44%;
 }
@@ -62,6 +48,7 @@ section:target-within {
 
 .menu {
     color: var(--bg-secondary-color);
+    padding: 10px;
 
     transition: color 100ms ease-in-out;
 }
@@ -212,7 +199,7 @@ footer {
     left: 50%;
     top: 44.69%;
     margin-left: -400px;
-    margin-top: -300px;
+    margin-top: -281px;
     height: 600px;
     width: 0;
     z-index: 3;
@@ -250,12 +237,6 @@ footer {
     background-color: transparent;
 }
 
-@media screen and (max-width: 375px) {
-    #credito {
-        text-align: center;
-    }
-}
-
 .card-title,
 .card-text {
     color: var(--bg-secondary-color);
@@ -268,6 +249,13 @@ footer {
 
 .a-p-3 {
     margin-top: 136px;
+}
+
+@media screen and (max-width: 1440px) {
+    #penalidades:target {
+        transition: margin-top 250ms ease-in-out;
+        margin-top: 160px;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -303,9 +291,14 @@ footer {
         left: 50%;
         top: 35.4%;
         margin-left: -150px;
-        margin-top: -200px;
+        margin-top: -172px;
         height: 600px;
         font-size: 14px;
+    }
+
+    footer {
+        top: 100%;
+        width: 100%;
     }
 }
 
@@ -319,6 +312,29 @@ footer {
     }
 }
 
+@media screen and (max-width: 425px) {
+    .meio {
+        left: 50%;
+        top: 35.4%;
+        margin-left: -150px;
+        margin-top: -179px;
+        height: 600px;
+        font-size: 14px;
+    }
+
+    #penalidades:target {
+        transition: margin-top 250ms ease-in-out;
+        margin-top: 175px;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    #credito {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .a-p-1 {
         margin-top: 64px;
@@ -327,13 +343,6 @@ footer {
     .a-p-2,
     .a-p-3 {
         margin-top: 16px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    footer {
-        top: 100%;
-        width: 100%;
     }
 }
 
