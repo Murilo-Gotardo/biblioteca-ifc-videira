@@ -308,6 +308,22 @@ footer {
     }
 }
 
+@media screen and (max-width: 720px) {
+    .meio {
+        left: 50%;
+        top: 35.4%;
+        margin-left: -150px;
+        margin-top: -120px;
+        height: 600px;
+        font-size: 14px;
+    }
+
+    footer {
+        top: 100%;
+        width: 100%;
+    }
+}
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;
@@ -339,7 +355,7 @@ footer {
 }
 
 @media screen and (max-width: 375px) {
-    #credito {
+    .credito {
         text-align: center;
     }
 
