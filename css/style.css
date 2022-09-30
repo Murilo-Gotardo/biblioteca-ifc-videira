@@ -286,6 +286,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 912px) {
+    #pdfRes {
+        padding: 0 13vh 13vh 13vh;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .meio {
         left: 50%;
@@ -326,12 +332,19 @@ footer {
         transition: margin-top 250ms ease-in-out;
         margin-top: 175px;
     }
-}
 
+    #pdfRes {
+        padding: 0 6vh 6vh 6vh;
+    }
+}
 
 @media screen and (max-width: 375px) {
     #credito {
         text-align: center;
+    }
+
+    #pdfRes {
+        padding: 1vh;
     }
 }
 
